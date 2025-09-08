@@ -5,7 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=], initial-scale=1.0">
     <title>Teoria</title>
+    <!-- Utilizando css interno -->
+    <style>
+        body{
+            background-color:black;
+            color: azure;
+        }
+        h1{
+            color: red;
+            font-size: xx-large;
+        }
+    </style>
 </head>
+
 <body>
     <!--Títulos de nível 1 até nivel 6-->
     <h1>Cabeçalho de nível 1</h1>
@@ -37,5 +49,126 @@
 
     <!-- "imagem" do tipo gif -->
     <img src="../LIMA/img/Luffy.gif" alt="luffy" title="Luffy gif">
-</body>
+
+    <!-- adicionando um caractere especial (a partir da clave de sol o que digitarmos é o caractere especial) -->
+    <!-- &lt; e &gt; simbolizam > < respectivamente -->
+    <p> Paragrafo com caractere &lt; &gt; </p>
+
+    <!-- inserindo emoji -->
+    <!-- para inserir emoji use o hexadecimal do site emojipedia 
+     e o código vai depois do &#x -->
+    <p> Inserindo emoji &#x2764 </p>
+
+    <!-- Tags para formatação e enfatização do texto -->
+    <b>Texto em negrito</b>
+    <strong>Texto importante</strong>
+    <h1><i>H1 em itálico</i></h1>
+    <em>Texto enfatizado</em><br>
+    <mark>Texto Marcado / grifado</mark>
+    <h3> Texto <small>menor</small></h3>
+    <del>Texto excluido</del>
+    <ins>Texto inserido</ins><br>
+    <p>4 <sub>2</sub></p>
+    <p>3 <sup>5</sup></p>
+    <u>Texto sublinhado</u><br>
+
+    <!-- listas-->
+    <!-- listas ordenadas: quando a ordem dos itens é importante-->
+    <!-- listas não ordenadas: quando a ordem dos itens não é importante-->
+
+    lista ordenada
+    <ol>
+        <li>step 1: wake up</li>
+        <li>step 2: take a shower</li>
+        <li>step 3: dress up</li>
+        <li>step 4: brush your teeth</li>
+        <li>step 5: take your bus and go to school </li>
+    </ol>
+
+    listas ordenadas com números romanos em minúsculo
+    <ol type="i">
+        <li>step 1: wake up</li>
+        <li>step 2: take a shower</li>
+        <li>step 3: dress up</li>
+        <li>step 4: brush your teeth</li>
+        <li>step 5: take your bus and go to school </li>
+    </ol>
+
+    Listas ordenadas em romanos com letras maiúsculas
+    <ol type="I">
+        <li>step 1: wake up</li>
+        <li>step 2: take a shower</li>
+        <li>step 3: dress up</li>
+        <li>step 4: brush your teeth</li>
+        <li>step 5: take your bus and go to school </li>
+    </ol>
+
+    listas ordenadas com letras maiúsculas
+    <ol type="A">
+        <li>step 1: wake up</li>
+        <li>step 2: take a shower</li>
+        <li>step 3: dress up</li>
+        <li>step 4: brush your teeth</li>
+        <li>step 5: take your bus and go to school </li>
+    </ol>
+
+    listas <mark><b>não</b></mark> ordenadas
+    <ul>
+        <li>carvão</li>
+        <li>carne</li>
+        <li>bebida</li>
+        <li>arroz</li>
+    </ul>
+
+    lista destro de lista
+    <ul>
+        <li>Carne 
+            <ul>
+                <li>Picanha</li>
+                <li>Fraldinha</li>
+                <li>Cupim</li>
+            </ul>
+        </li>
+    </ul>
+
+    Trabalhando com tabelas
+    <!-- Criando uma nova tabela -->
+     <table border="1">
+        <!-- Criando uma nova linha -->
+        <tr>
+            <!-- th insere uma célula de cabeçalho -->
+             <th>Nome</th>
+             <th>Idade</th>
+             <th>Profissão</th>
+        </tr>
+        <tr>
+            <!-- td cria dados na nova célula -->
+            <td>Lyuz</td>
+            <td>16</td>
+            <td>Estudante</td>
+        </tr>
+     </table>
+
+     Tabelas mescladas
+     <table border="1">
+        <thead>
+            <th>Nome</th>
+            <th>Telefone</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">João Pedro</td>
+                <td>890890890</td>
+            </tr>
+            <tr>
+                <td>Thiciane</td>
+                <td>567567567</td>
+            </tr>
+
+        </tbody>
+     </table>
+
+     <p><strong>Css</strong></p>
+     <p style="background-color:cornflowerblue; font-size: x-large;">Css inline</p>
+    </body>
 </html>
