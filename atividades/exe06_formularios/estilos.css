@@ -1,0 +1,72 @@
+/* margem 0 */
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.fonte{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(124, 196, 52);
+    text-shadow: 5px 2px 2px rgba(0, 0, 0, 0.9) ;
+    text-align:center;
+    height: 30px;
+    height: 30px;
+    color: azure;
+}
+
+.link{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 10px 0 0 1486px;
+    background-color: darkgreen;
+    color: azure;
+
+}
+
+.oiii{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: azure;
+    margin-left: 40px;
+    margin-bottom: 10px;
+}
+
+.imagem{
+    margin-left: 500px;
+}
+
+.lista1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: azure;
+}
+
+/*  Página de login ------------------------------------ */
+
+.formularios{
+    background-color:darkolivegreen;
+}
+
+.ola{
+    background-color: rgb(124, 196, 52);
+    color: azure;
+    text-align: center;
+    text-shadow: 5px 2px 2px rgba(0, 0, 0, 0.9);
+}
+
+.input-nome{
+    height: 20px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    opacity: 70%;
+}
+
+.botao{
+    background-color: chocolate;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: larger;
+    text-shadow: 5px 2px 5px rgba(212, 14, 57, 0.9);
+}
