@@ -75,3 +75,62 @@ p{
     /* Aplicando sombra no terxto posição (x,y, blur, rgba, respectivamente) alpha = opacidade*/
     text-shadow: 5px 2px 5px rgba(212, 14, 57, 0.9);
 }
+
+.checar{
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+
+    /* Modifica o tipo do cursor */
+    cursor: pointer;
+
+    /* Limpar comfigurações aparência */
+    appearance: none;
+
+
+    background-color:aliceblue;
+    /* bordas */
+    border: 2px dashed #00b7ff;
+    border-radius: 5px; /* Arredodonda cantos */
+}
+
+/* psêudo classe */
+.checar:checked{
+    background-color: #00b7ff;
+}
+
+.email{
+    width: 300px;
+    padding: 5px;
+    border: 2px solid white;
+    border-radius: 2px;
+}
+
+.selecao{
+    appearance: none;
+    width: 300px;
+    padding: 4px;
+    font-size: 16px;
+    color: #3e3e3e;
+    background-color: white;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+
+    /* Sombra no input (x, y, blur, rgba)*/
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8px);
+}
+
+.radio{
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgb(123, 138, 255);
+    border-radius: 50%;
+
+}
+
+/* psêudo classe quando o estado do objeto mudar ele atribui outras propriedades */
+.radio:checked{
+    background-color: rgb(53, 8, 255);
+    border-color:rgb(53, 8, 255) ;
+}

@@ -185,6 +185,63 @@
           <label>senha</label>
           <input class="input-nome" placeholder="Digite uma senha" type="password"><br>
           <input href="#" type="button" class="botao" value="Entrar">
+          <br>
+          <!-- Incluindo checkbox(Opções) -->
+           <input type="checkbox" class="checar">Eu tenho uma bicicleta <br>
+           <input type="checkbox" class="checar">Eu tenho uma moto <br>
+           <input type="checkbox" class="checar">Eu tenho um carro <br>
+
+           <!-- Incluir input de cor -->
+           <input type="color" value="#000000">
+
+           <!-- Inserindo Data -->
+            <br><label for="">Data de nascimento</label>
+            <input type="date">
+            <input type="datetime-local">
+
+            <!-- Input do tipo email -->
+            <input type="email" placeholder="Digite seu email" class="email">
+
+            <!-- Seleção de arquivos do pc -->
+            <input type="file">
+
+            <!-- input de Seleção -->
+            <select>
+                <!-- O atributo value enviara o valor do item selecionado para o servidor -->
+                <option value="">Selecione a escolaridade</option>
+                <option value="primeiro medio">1º médio</option>
+                <option value="segundo medio">2º médio</option>
+                <option value="terceiro medio">3º médio</option>
+            </select>
+            <select class="selecao">
+                <option value="" selected>Selecione a escolaridade</option>
+                <option value="primeiro medio">1º médio</option>
+                <option value="segundo medio">2º médio</option>
+                <option value="terceiro medio">3º médio</option>
+            </select>
+
+            <!-- input radio button  -->
+            <p>Radio button</p>
+            <input type="radio" name="tamanho">Pequeno
+            <input type="radio" name="tamanho">medio
+            <input type="radio" name="tamanho">grande
+            <input type="radio" name="tamanho">Outro
+            <br>
+            <p>Radio button</p>
+            <input type="radio" name="tamanho" class="radio">Pequeno
+            <input type="radio" name="tamanho" class="radio">medio
+            <input type="radio" name="tamanho" class="radio">grande
+            <input type="radio" name="tamanho" class="radio">Outro
+
+            <!-- Criar um grupo de componentes -->
+             <fieldset>
+                <legend>Descrição</legend>
+                <textarea name="" id=""></textarea>
+             </fieldset>
+
+            <!-- input submit (Só envia/reseta se estiver dentro do form)-->
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar"> 
      </form>
     </body>
 </html>
