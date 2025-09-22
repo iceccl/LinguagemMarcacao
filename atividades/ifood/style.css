@@ -1,0 +1,40 @@
+
+/* ctrl + espaço para aparecer a caixinha de sugestões de codigos */
+:root{
+    /* criando uma variável chamada "cor-vermelho-ifood" */
+    --cor-vermelho-ifood: #ea1d2c;
+    --cor-cinza-texto: #575757;
+    --cor-cinza-borda: #e2e2e2; 
+    --cor-fundo: #f7f7f7;
+}
+
+* {
+    /* Zerando as propriedades do documento */
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /* Apliquei em todo o documento, fonte, cor e cor-fundo */
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--cor-fundo);
+    color: var(--cor-cinza-texto);
+}
+
+.cabecalho{
+    background-color: #fff;
+    padding: 15px 0;
+    border-bottom: 1px solid var(--cor-cinza-borda);
+}
+
+.logo{
+    height: 10vh;
+}
+
+.container{
+    display: flex;
+    /* Propriedade define a largura maxima que ele pode atingir */
+    max-width: 1200px;
+    padding: 0 20px;
+    justify-content: space-between;
+}

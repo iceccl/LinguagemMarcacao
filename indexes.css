@@ -1,0 +1,55 @@
+.titulo{
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: cornflowerblue;
+    font-size: x-large;
+    margin-top: 250px;
+    margin-left: 35px;
+}
+
+.divisao{
+    justify-content: space-between;
+    width: 150px;
+    height: 150px;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 8px;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.51);
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+
+    transition: all 0.2s ease-in-out;
+    flex: 0 0 auto;
+}
+
+.divisao:hover{
+    transform: scale(1.1);
+}
+
+.mano{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 1rem;
+    height: 200px;
+    padding: 10px;
+    margin-left: 5px;
+    overflow-x: auto;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.imagem > img{
+    display: flex;
+    justify-content: center;
+    max-width: 100px;
+    height: 50px;
+}
+
+.para{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
