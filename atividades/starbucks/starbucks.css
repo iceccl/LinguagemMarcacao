@@ -1,8 +1,7 @@
-
 /* ctrl + espaço para aparecer a caixinha de sugestões de codigos */
 :root{
     /* criando uma variável chamada "cor-vermelho-ifood" */
-    --cor-vermelho-ifood: #ea1d2c;
+    --cor-verde-starbucks: #099117;
     --cor-cinza-texto: #575757;
     --cor-cinza-borda: #e2e2e2; 
     --cor-fundo: #f7f7f7;
@@ -28,7 +27,7 @@ body{
 }
 
 .logo{
-    height: 10vh;
+    height: 6vh;
 }
 
 .container{
@@ -37,6 +36,8 @@ body{
     max-width: 1200px;
     padding: 0 20px;
     justify-content: space-between;
+    align-items: center;
+    gap: 30px;
 }
 
 
@@ -44,7 +45,7 @@ body{
 .navegacao{
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
 }
 
 .item{
@@ -54,7 +55,7 @@ body{
     /* aplicando negrito! */
     font-weight: 600;
 
-    font-size: larger;
+    font-size: small;
     padding: 8px 6px;
     border-bottom: 3px solid transparent;
     color: var(--cor-cinza-texto);
@@ -65,55 +66,29 @@ body{
 /* neste caso focus mantém as propriedades após o clique */
 .item:focus,
 .item:hover{
-    color: var(--cor-vermelho-ifood);
-    border-bottom-color: var(--cor-vermelho-ifood);
-
+    color: var(--cor-verde-starbucks);
+    border-bottom-color: var(--cor-verde-starbucks);
 }
 
 /* ---------------------------------------------- */
 
-.buscar{
-    padding: 10px;
-    border: 1px solid var(--cor-cinza-borda);
-    border-radius: 8px;
-    width: 10rem;
-}
-
-.localizacao{
+.menu-direita{
     display: flex;
-    align-items: center;
-    font-weight: 600;
+    justify-content: space-between;
+    gap: 40px;
 }
 
-.texto-local{
-    border: none;
-    font-weight: 600;
-    font-size: 1rem;
-}
-
-.acao{
+.bloco{
     display: flex;
-    align-items: center;
-    gap: 14px;
+    justify-content: flex-end;
+    margin-top: 35px;
+    margin-right: 35px;
 }
 
-.criar-conta{
-    text-decoration: none;
-    color: var(--cor-vermelho-ifood);
-    font-weight: 600;
+.bloco > img{
+    height: 58vh;
 }
 
-.botao-entrar{
-    background-color: var(--cor-vermelho-ifood);
-    color: var(--cor-fundo);
-    border: none;
-    padding: 10px 20px;
-    border-radius: 8px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.botao-entrar:hover{
-    background-color: #ff6c76;
+.texto-imagem{
+    border: 1px solid ;
 }
