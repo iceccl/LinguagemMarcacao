@@ -25,6 +25,8 @@ body{
     background-color: #fff;
     padding: 15px 0;
     border-bottom: 1px solid var(--cor-cinza-borda);
+    display: flex;
+    justify-content: center;
 }
 
 .logo{
@@ -116,4 +118,45 @@ body{
 
 .botao-entrar:hover{
     background-color: #ff6c76;
+}
+
+/* -------------------------------- */
+/* Main */
+
+.opcoes{
+    display: flex;
+    flex-direction: row;
+    margin-left: 40px;
+    margin-top: 40px;
+    gap: 20px;
+}
+
+.bloco{
+    border: 1px solid var(--cor-cinza-borda);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.bloco:hover{
+    transform: translateY(-5px);
+    background-color: #ff909879;
+}
+
+.bloco > img{
+    width: 120px;
+    height: 120px;
+    border-radius: 20px;
+}
+
+.bloco > p{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-size: larger;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
 }
