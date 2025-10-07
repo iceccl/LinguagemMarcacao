@@ -123,11 +123,15 @@ body{
 /* -------------------------------- */
 /* Main */
 
+.haga2{
+    margin-left: 20px;
+}
+
 .opcoes{
     display: flex;
-    flex-direction: row;
     margin-left: 40px;
     margin-top: 40px;
+    margin-bottom: 40px;
     gap: 20px;
 }
 
@@ -143,6 +147,7 @@ body{
 .bloco:hover{
     transform: translateY(-5px);
     background-color: #ff909879;
+    cursor: pointer;
 }
 
 .bloco > img{
@@ -159,4 +164,110 @@ body{
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
+}
+
+.lojas{
+    display: flex;
+    margin-left: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    gap: 20px;
+}
+
+.loja{
+    border: 1px solid var(--cor-cinza-borda);
+    border-radius: 20px;
+    padding: 30px 30px 30px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.texto1{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 2px;
+    align-items: center;
+    padding: 2px;
+    font-size: small;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+.texto2{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 2px;
+    padding: 2px;
+    font-size: small;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+}
+
+.loja:hover{
+    transform: translateY(-5px);
+    background-color: #ff909879;
+    cursor: pointer;
+}
+
+.loja > img{
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    border-radius: 100px;
+}
+/* FOOTER ---------------------------------- */
+
+.rodape-principal{
+    background-color: #575757;
+    color: #fff;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rodape-principal .container-rodape{
+    display: flex;
+    gap: 40px;
+}
+
+.coluna-rodape{
+    flex: 1; /* faz com que os elementos ocupem todo o espaço */
+}
+.coluna-rodape h3{
+    margin-bottom: 20px;
+}
+.coluna-rodape ul{
+    list-style: none;
+}
+.coluna-rodape ul li{
+    margin-bottom: 10px;
+}
+.coluna-rodape a{
+    text-decoration: none;
+    color: #e2e2e2;
+    transition: color 0.2s ease;
+}
+.coluna-rodape a:hover{
+    color: red;
+}
+.icones-sociais{
+    margin-right: 15px;
+    object-fit: contain;
+    display: flex;
+    justify-content: center;
+    gap: 9px;
+    align-items: center;
+}
+.icones-sociais img{
+    height: 50px;
+    width: 52px;
+    cursor: pointer;
+    border-radius: 100px;
 }

@@ -2,7 +2,7 @@
 :root{
     /* criando uma variável chamada "cor-vermelho-ifood" */
     --cor-verde-starbucks: #099117;
-    --cor-verdeclaro-starb: rgb(217, 236, 217);
+    --cor-verdeclaro-starb: #d4e9e2;
     --cor-cinza-texto: #575757;
     --cor-cinza-borda: #e2e2e2; 
     --cor-fundo: #f7f7f7;
@@ -135,4 +135,55 @@ body{
     justify-content: center;
     align-items: center;
     background-color: var(--cor-verdeclaro-starb);
+}
+
+/* footer ----------------------------- */
+
+.rodape-principal{
+    background-color: #fafafa;
+    color: #000000;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rodape-principal .container-rodape{
+    display: flex;
+    gap: 40px;
+}
+
+.coluna-rodape{
+    flex: 1; /* faz com que os elementos ocupem todo o espaço */
+}
+.coluna-rodape h3{
+    margin-bottom: 20px;
+}
+.coluna-rodape ul{
+    list-style: none;
+}
+.coluna-rodape ul li{
+    margin-bottom: 10px;
+}
+.coluna-rodape a{
+    text-decoration: none;
+    color: #000000;
+    transition: color 0.2s ease;
+}
+.coluna-rodape a:hover{
+    color: var(--cor-verde-starbucks);
+}
+.icones-sociais{
+    margin-right: 15px;
+    object-fit: contain;
+    display: flex;
+    justify-content: center;
+    gap: 9px;
+    align-items: center;
+}
+.icones-sociais img{
+    height: 50px;
+    width: 52px;
+    cursor: pointer;
+    border-radius: 100px;
 }
