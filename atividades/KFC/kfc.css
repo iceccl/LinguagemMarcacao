@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1.5px solid black;
+    padding-bottom: 15px;
+    justify-content: space-around;
+}
+
+.bloco{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+.texto button{
+    border: none;
+    padding: 7px;
+    border-radius: 7px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    background-color: rgba(0, 0, 0, 0);
+    transition: all 0.3s ease;
+}
+
+.texto button:hover{
+    cursor: pointer;
+    color: #fff;
+    background-color: red;
+}
+
+.imagem > a > img{
+    height: 70px;
+    width: 80px;
+}

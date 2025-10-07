@@ -27,6 +27,11 @@ body{
     border-bottom: 1px solid var(--cor-cinza-borda);
     display: flex;
     justify-content: center;
+    position: sticky;
+    top: 0;
+
+    /* z-index = prioridade do objeto acima dos outros (neste caso o cabeçalho sempre vai sobrepor os outros) */
+    z-index: 1;
 }
 
 .logo{
@@ -270,4 +275,121 @@ body{
     width: 52px;
     cursor: pointer;
     border-radius: 100px;
+}
+
+/* Modal ---------------------- */
+.modal-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+
+    /* centralizar nosso box */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Começar escondido */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3 ease;
+}
+
+/* Chama pelo ID */
+#modal-cadastro:target{
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-box{
+    background-color: #fff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    max-width: 450px;
+    width: 90%;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    transform: scale(0.95);
+    transition: transform 0.3s ease;
+}
+
+#modal-cadastro:target .modal-box{
+    transform: scale(1);
+}
+
+.modal-cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.modal-cabecalho h2{
+    font-size: 2rem;
+    color: #333;
+}
+
+.fechar{
+    text-decoration: none;
+    font-size: 2rem;
+    color: var(--cor-cinza-texto);
+    font-weight: 300;
+
+}
+
+.formulario .grupo-form{
+    margin-bottom: 20px;
+}
+
+.formulario label{
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.formulario input{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--cor-cinza-borda);
+    border-radius: 8px;
+    font-family: 'Poppings', sans-serif;
+    font-size: 0.8rem;
+}
+
+.formulario input:focus{
+    outline: none;
+    border-color: var(--cor-vermelho-ifood);
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.05);
+}
+
+.formulario .botao-criar{
+    width: 100%;
+    padding: 15px;
+    font-size: 0.8rem;
+    margin-top: 10px;
+    color: #000;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.botao-criar:hover{
+    cursor: pointer;
+    color: #fff;
+    background-color: var(--cor-vermelho-ifood);
+    transform: scale(1.025);
+}
+
+.modal-rodape{
+    margin-top: 25px;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.modal-rodape a{
+    color: var(--cor-vermelho-ifood);
+    font-weight: 600;
+    text-decoration: none;
 }
