@@ -16,6 +16,9 @@ app.use(express.static('public'));
 app.use(expressLayouts)
 app.set('layout', 'layouts/principal')
 
+// para processar os dados do formulário
+app.use(express.urlencoded({ extended: true }))
+
 // Rotas GET (páginas)
 app.get('/', (req, res) => {
     // renderiza views/indes.ejs dentro do layout principal
@@ -25,6 +28,34 @@ app.get('/', (req, res) => {
 app.get('/sobre', (req, res) => {
     // renderiza views/sobre.ejs dentro do layout principal
     res.render('sobre');
+})
+
+app.get('/juros_simples', (req,res) => {
+    res.render('juros_simples')
+})
+
+app.get('/juros_compostos', (req,res) => {
+    res.render('juros_compostos')
+})
+
+// rota para processar o cálculo
+app.post('/juros_simples', (req, res) => {
+    const capital = req.body.capital
+    const taxa = req.body.taxa
+    const tempo = req.body.tempo
+    const juros = parseFloat(capital) * (parseFloat(taxa) / 100) * parseFloat(tempo);
+    const total = parseFloat(capital) + juros;
+
+    res.render('juros_simples', {capital, taxa, tempo, juros, total})
+})
+app.post('/juros_compostos', (req, res) => {
+    const capital = req.body.capital
+    const taxa = req.body.taxa
+    const tempo = req.body.tempo
+    const juros = parseFloat(capital) * ((1 + (parseFloat(taxa) / 100))**parseFloat(tempo));
+    const total = parseFloat(capital) + juros;
+
+    res.render('juros_compostos', {capital, taxa, tempo, juros, total})
 })
 
 // Sobe o servidor
