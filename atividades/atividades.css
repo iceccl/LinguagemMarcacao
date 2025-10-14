@@ -5,6 +5,7 @@
 
 .principal{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     margin-top: 35px;
     gap: 17px;
