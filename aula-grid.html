@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula sobre grid layout</title>
+
+    <!-- importar tailwind -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="container mx-auto p-4">
+    <!-- Dar espaços entre as seções -->
+    <div class="space-y-12">
+        <section>
+            <!-- 1 - Grid Básico -->
+            <h2 class="text-4xl font-bold mb-4">Grid Básico</h2>
+
+            <!-- Grid de 12 colunas -->
+            <div class="grid grid-cols-12 text-2xl text-white text-center">
+                <div class="bg-blue-500 p-2">1</div>
+                <div class="bg-red-500 p-2">2</div>
+                <div class="bg-yellow-500 p-2">3</div>
+                <div class="bg-gray-500 p-2">4</div>
+                <div class="bg-cyan-500 p-2">5</div>
+                <div class="bg-purple-500 p-2">6</div>
+                <div class="bg-green-500 p-2">7</div>
+                <div class="bg-pink-500 p-2">8</div>
+                <div class="bg-blue-800 p-2">9</div>
+                <div class="bg-slate-500 p-2">10</div>
+                <div class="bg-orange-500 p-2">11</div>
+                <div class="bg-blue-500 p-2">12</div>
+            </div>
+            <div class="grid grid-cols-12 gap-2 mt-4 text-2xl text-white text-center">
+                <!-- Usamos col-span para determinar a quantidade de colunas que o elemento terá -->
+                <div class="col-span-1 bg-blue-300 p-2">1</div>
+                <div class="col-span-2 bg-blue-500 p-2">2</div>
+                <div class="col-span-3 bg-blue-800 p-2">3</div>
+                <div class="col-span-5 bg-blue-950 p-2">4</div>
+            </div>
+        </section>
+        <section>
+            <!-- Grid Responsivo -->
+            <h2 class="text-4xl font-bold mb-4">Grid Responsivo</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 xl:grid-cols-12">
+                <div class="bg-blue-500 p-2">1</div>
+                <div class="bg-red-500 p-2">2</div>
+                <div class="bg-yellow-500 p-2">3</div>
+                <div class="bg-gray-500 p-2">4</div>
+                <div class="bg-cyan-500 p-2">5</div>
+                <div class="bg-purple-500 p-2">6</div>
+                <div class="bg-green-500 p-2">7</div>
+                <div class="bg-pink-500 p-2">8</div>
+                <div class="bg-blue-800 p-2">9</div>
+                <div class="bg-slate-500 p-2">10</div>
+                <div class="bg-orange-500 p-2">11</div>
+                <div class="bg-blue-500 p-2">12</div>
+            </div>
+        </section>
+        <section>
+            <h2 class="text-4xl font-bold mb-4">Quebra de linha</h2>
+
+            <div class="grid grid-cols-4 text-2xl text-center">
+                <div class="bg-red-300">1</div>
+                <div class="bg-red-500">2</div>
+                <!-- row-start posiciona o elemento na linha que você determinar -->
+                <!-- col-start posiciona o elemento na coluna que você determinar -->
+                <div class="row-start-2 col-start-4 bg-red-800 ">3</div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="text-4xl font-bold mb-4">Ordem com grid</h2>
+
+            <div class="grid grid-cols-4 text-2xl text-center">
+                <div class="order-2 bg-red-300">1</div>
+                <div class="order-3 bg-red-500">2</div>
+                <!-- row-start posiciona o elemento na linha que você determinar -->
+                <!-- col-start posiciona o elemento na coluna que você determinar -->
+                <div class="order-1 bg-red-800 ">3</div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="text-4xl font-bold mb-4">Tamanho e posição dos grids</h2>
+
+            <div class="grid grid-cols-12 text-2xl text-center">
+                <div class="col-span-1 col-start-12 bg-red-300">1</div>
+                <div class="col-span-4 col-start-4 bg-red-500">2</div>
+                <div class="col-span-6 col-start-2 bg-red-800 ">3</div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="text-4xl font-bold mb-4">Alinhamento dos grids</h2>
+
+            <div class="grid grid-cols-3 h-[300px] bg-gray-300 text-2xl text-center">
+                <div class="self-end bg-red-300">1 - fim</div>
+                <div class="self-center bg-red-500">2 - centro</div>
+                <div class=" self-start bg-red-800 ">3 - começo</div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

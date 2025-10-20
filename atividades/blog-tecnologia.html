@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- importar tailwind -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-300">
+    <section>
+        <div class="grid grid-cols-1 gap-4 sm:grid-cols-6 md:grid-cols-6 lg:grid-cols-12 xl:grid-cols-12 mx-3 mt-3">
+            <div class="bg-white rounded-xl p-4 col-span-12">
+                <!-- Meu blog de tecnologia -->
+                <h2 class="text-2xl font-bold mb-1">Meu blog de Tecnologia</h2>
+                <p>Notícias e tutoriais sobre o mundo dev</p>
+            </div>
+
+            <div class="bg-white rounded-xl p-4 col-span-12 sm:md:order-10">
+                <!-- footer -->
+                <p>© 2025 Meu blog de Tecnologia. Todos os direitos reservados</p>
+            </div>
+            
+            <div class="bg-white rounded-xl p-4 gap-4 col-span-12 lg:col-span-5 xl:col-span-5 order-12">
+                <!-- Categoria -->
+                <h2 class="text-2xl font-bold mb-4">Categorias</h2>
+                <p>CSS</p>
+                <p>Java Script</p>
+                <p>React</p>
+                <p>Node.js</p>
+            </div>
+
+            <div class="bg-white rounded-xl p-4 col-span-12 lg:col-span-7 xl:col-span-7 md:sm:order-12">
+                <!-- O que é tailwind CSS? -->
+                <h2 class="text-2xl font-bold mb-4">O que é tailwind css?</h2>
+                <p>Tailwind CSS é um framework CSS "utility-first" que pode ser composto para construir qualquer design, diretamente no seu HTML... <br>
+                Ao contrário de outros frameworks como Bootstrap, ele não vem com componentes de UI pré-fabricados. Em vez disso, ele fornece classes de baixo nível que você pode usar para construir designs completamente personalizados sem nunca sair do seu HTML.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
