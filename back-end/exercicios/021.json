@@ -1,0 +1,10 @@
+{
+    "nome": "Lyuz",
+    "username": "Ice",
+    "NR_seguidores": 2000,
+    "posts": [
+        {"legenda": "Fazendo carinho no meu gato","curtidas": 100},
+        {"legenda": "Passarinhos a beira do rio","curtidas": 210},
+        {"legenda": "tutorial de como beber água","curtidas": 90}
+    ]
+}

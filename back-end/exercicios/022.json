@@ -1,0 +1,19 @@
+{
+    "carro": "X7",
+    "modelo": "X7",
+    "Ano": 2023,
+    "marca": "BMW",
+    "Perifericos": [
+        {"cameraTraseira": true},
+        {"4portas": true},
+        {"arCondicionado": true},
+        {"telaInterativa": true},
+        {"teto_removivel": false}
+    ],
+
+    "dados": [
+        {"serial": "2023-20020"},
+        {"quantidadeEmEstoque": 300000},
+        {"dataFabricacao": "18/10/2023"}
+    ]
+}
