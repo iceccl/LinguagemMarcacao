@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="./script.js"></script>
+    <title>Doçuras da vovó</title>
+</head>
+<body class="bg-gray-100">
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between md:justify-around items-center">
+            <a href="#" class="text-2xl font-bold text-pink-600">🎂Doçuras da vovó</a>
+            <div class="hidden md:flex space-x-6 items-center md:flex-row-reverse">
+                <div class="relative">
+                    <!-- Menu -->
+                     <button id="minha-conta" class="flex items-center text-gray-800 hover:text-blue-600 ml-6">
+                        Minha conta
+                        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                     </button>
+                     <div id="menu-minha-conta" class="hidden absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1">
+                        <a href="" class="block px-4 py-2 text-sm text-gray-400 hover:bg-pink-50">Meus pedidos</a>
+                        <a href="" class="block px-4 py-2 text-sm text-gray-400 hover:bg-pink-50">Configurações</a>
+                        <a href="" class="block px-4 py-2 text-sm text-gray-400 hover:bg-pink-50">Sair</a>
+                     </div>
+                </div>
+                     <a href="" class="text-gray-800 hover:text-pink-600">📍Principal</a>
+                     <a href="" class="text-gray-800 hover:text-pink-600">🌟Favoritos</a>
+                     <a href="" class="text-gray-800 hover:text-pink-600">🔍Promoções</a>  
+            </div>
+                <button id="btn-hamburguer" class="md:hidden text-gray-600 focus:outline-none">
+                    <!-- Menu hamburguer -->
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+                </button> 
+        </nav>
+        <!-- Menu Mobile -->
+        <div id="menu-mobile" class="md:hidden bg-white shadow-lg flex justify-around mx-2">
+            <a href="#principal" class="text-gray-400 hover:text-pink-600">📍Principal</a>
+            <a href="#" class="text-gray-400 hover:text-pink-600">🌟Favoritos</a>
+            <a href="#promocoes" class="text-gray-400 hover:text-pink-600">🔍Promoções</a>  
+        </div>
+    </header>
+    <main>
+        <div class="flex p-14 justify-between items-center" id="">
+            <div class="pl-8 justify-start">
+                <h1 class="font-mono font-bold text-5xl text-pink-600">Novidades✨</h1>
+                <p class=" font-bold font-sans text-2xl text-gray-600">Pensando em você!</p>
+            </div>
+
+            <section class="relative w-1/2 max-w-4xl mx-0 rounded-lg shadow-xl">
+            <div id="carrossel-container" class="overflow-hidden rounded-lg">
+                <div id="carrossel-slides" class="transition-transform duration-500 ease-in-out flex flex-row">
+                    <div style="background-image: url(./img/Bolo-de-Caramelo-SI-1.jpg); background-size: cover;" class="slide-carrossel min-w-full h-80  bg-blue-500 text-white flex items-center justify-center bg-no-repeat ">
+                        <h2 class="text-4xl font-bold">Bolo Caramelo</h2>
+                    </div>
+                    
+                    <div style="background-image: url(./img/sonho-de-morango.webp); background-size: cover;" class="slide-carrossel min-w-full h-80  bg-green-500 text-white flex items-center justify-center">
+                        <h2 class="text-4xl font-bold">Sonho de morango</h2>
+                    </div>
+
+                    <div style="background-image: url(./img/brigadeiro.JPG);" class="slide-carrossel min-w-full h-80  bg-yellow-500 text-white flex items-center justify-center bg-no-repeat">
+                        <h2 class="text-4xl font-bold">Brigadeiro</h2>
+                    </div>
+                </div>
+
+            </div>
+            <button id="btn-anterior" class="absolute top-1/2 left-4 bg-pink-500/30 hover:bg-pink-500/50 rounded-full shadow -translate-y-1/2">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+            </button>
+            <button id="btn-proximo" class="absolute top-1/2 right-4 bg-pink-500/30 hover:bg-pink-500/50 rounded-full shadow -translate-y-1/2">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+            </button>
+            </section>
+
+        </div>
+
+        <div id="promocoes" class="flex flex-row-reverse justify-between border rounded-lg bg-gray-200 mx-14">
+            <div class="flex justify-center items-center flex-col pr-14">
+                <h1 class="text-pink-600 font-mono font-bold text-3xl">Bolo de chocolate</h1>
+                <p class="text-lg font-mono text-gray-700">por apenas R$59,99 por kilo</p>
+                <button class="border rounded-s-full rounded-e-full bg-pink-500/50 px-4 py-1">
+                    <label class="text-xl"><a href="">Comprar</a></label>
+                </button>
+            </div>
+            <div style="background-image: url(./img/Bolo-de-Caramelo-SI-1.jpg); background-repeat: no-repeat; background-size: cover;" class="relative w-1/2 h-96 max-w-4xl mx-0 rounded-lg shadow-xl" >
+            </div>
+        </div>
+    </main>
+</body>
+</html>

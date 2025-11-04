@@ -1,0 +1,64 @@
+<%- include('../includes/header.ejs', { titulo: 'Lista de Professores' }) %>
+
+<main class="p-4 md:p-6 pb-24 bg-neutra-50 min-h-screen">
+
+  <!-- Grid de Cards -->
+  <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+    <% for (let professor of professores) { %>
+      <div
+        class="bg-white rounded-lg shadow-md p-4 flex flex-col justify-between border border-gray-200
+               hover:shadow-xl hover:-translate-y-1 hover:bg-sistema-50 transition-all duration-300 ease-in-out"
+        title="Clique nos botões para editar ou deletar este professor">
+        
+        <div>
+          <p class="font-semibold text-sistema-700 text-base md:text-lg mb-1">
+            <%= professor.nome_professor %>
+          </p>
+          <p class="text-gray-500 text-sm">Telefone:</p>
+          <p class="text-gray-800 mb-1"><%= professor.telefone %></p>
+
+          <p class="text-gray-500 text-sm">Formação:</p>
+          <p class="text-gray-800 mb-2"><%= professor.formacao %></p>
+        </div>
+
+        <!-- Botões de ação -->
+        <div class="flex justify-end gap-3 mt-3">
+          <!-- Editar -->
+          <form action="/professores/<%= professor.id_professor %>/editar" method="GET">
+            <button type="submit"
+                    title="Editar professor"
+                    class="bg-sucesso-600 hover:bg-sucesso-700 text-white p-2 rounded-full shadow flex items-center justify-center transition-transform hover:scale-110">
+              <img src="/img/edit.svg" alt="Editar" class="w-4 h-4 md:w-5 md:h-5">
+            </button>
+          </form>
+
+          <!-- Deletar -->
+          <form action="/professores/<%= professor.id_professor %>/deletar" method="POST"
+                onsubmit="return confirm('Deseja realmente excluir este professor?')">
+            <button type="submit"
+                    title="Excluir professor"
+                    class="bg-erro-600 hover:bg-erro-700 text-white p-2 rounded-full shadow flex items-center justify-center transition-transform hover:scale-110">
+              <img src="/img/delete.svg" alt="Deletar" class="w-4 h-4 md:w-5 md:h-5">
+            </button>
+          </form>
+        </div>
+      </div>
+    <% } %>
+  </div>
+
+  <!-- FAB: botão flutuante de adicionar (vermelho vibrante com leve degradê) -->
+<a href="/professores/novo"
+   aria-label="Adicionar Professor"
+   title="Adicionar novo professor"
+   class="fixed right-6 bottom-24 md:bottom-8 z-50
+          w-14 h-14 rounded-full bg-gradient-to-b from-sistema-500 to-sistema-700 text-white
+          flex items-center justify-center shadow-lg
+          hover:shadow-xl hover:scale-110 transition-all duration-300
+          focus:outline-none focus:ring-4 focus:ring-white/50">
+  <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M11 5a1 1 0 1 1 2 0v6h6a1 1 0 1 1 0 2h-6v6a1 1 0 1 1-2 0v-6H5a1 1 0 1 1 0-2h6V5z"/>
+  </svg>
+</a>
+</main>
+
+<%- include('../includes/footer.ejs') %>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sistema Escolar - <%= titulo %></title>
+
+  <!-- Twind com configuração personalizada -->
+  <script type="module" src="/js/twind-setup.js"></script>
+</head>
+
+<body class="bg-neutra-50">
+
+  <!-- Header com degradê vermelho -->
+  <header class="bg-gradient-to-r from-sistema-800 via-sistema-700 to-sistema-500 text-white shadow-md border-b border-white/30">
+    <div class="max-w-7xl mx-auto px-6 py-3">
+
+      <!-- Linha 1: título fixo -->
+      <div class="flex items-center justify-start">
+        <h1 class="text-2xl font-bold tracking-wide">Sistema Escolar</h1>
+      </div>
+
+      <!-- Linha 2: título da página + menu fixo -->
+      <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mt-2">
+
+        <!-- Título dinâmico -->
+        <h2 class="text-base sm:text-lg font-semibold text-sistema-50 drop-shadow-sm text-center sm:text-left">
+          <%= titulo %>
+        </h2>
+
+        <!-- Menu sempre visível -->
+        <nav class="flex items-center gap-4 text-sm tracking-wide mt-2 sm:mt-0">
+          <a href="/admin" class="hover:text-sistema-200 transition">Dashboard</a>
+          <span class="opacity-70">|</span>
+          <a href="/professores/" class="hover:text-sistema-200 transition">Professores</a> 
+          <span class="opacity-70">|</span>
+          <a href="/" class="hover:text-sistema-200 transition">Sair</a>
+        </nav>
+
+      </div>
+    </div>
+  </header>
+
+</body>
+</html>
